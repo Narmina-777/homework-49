@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Мини-магазин</title>
+    <style>
+      .product-card,
+      .cart-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+      }
+      #container {
+        display: flex;
+        gap: 40px;
+      }
+      #product-container,
+      #cart-container {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Мини-магазин</h1>
+    <div id="container">
+      <div id="product-container"></div>
+      <div id="cart-container"></div>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
