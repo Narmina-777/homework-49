@@ -2,30 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Мини-магазин</title>
-    <style>
-      .product-card,
-      .cart-item {
-        border: 1px solid #ccc;
-        padding: 10px;
-        margin: 10px;
-      }
-      #container {
-        display: flex;
-        gap: 40px;
-      }
-      #product-container,
-      #cart-container {
-        width: 50%;
-      }
-    </style>
+    <title>Мини-магазин MVC + TypeScript</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Мини-магазин</h1>
-    <div id="container">
-      <div id="product-container"></div>
-      <div id="cart-container"></div>
+    <div id="products-container">
+      <h2>Товары</h2>
     </div>
-    <script type="module" src="./src/main.ts"></script>
+    <div id="cart-container">
+      <h2>Корзина</h2>
+    </div>
+
+    <script src="dist/main.ts"></script>
   </body>
 </html>
